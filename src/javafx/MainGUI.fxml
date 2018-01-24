@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="475.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.MainGUIController">
+   <children>
+      <ChoiceBox fx:id="datasetChoiceBox" layoutX="149.0" layoutY="27.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="28.0" layoutY="31.0" text="Choose dataset:" />
+      <Button fx:id="clusterButton" layoutX="430.0" layoutY="24.0" mnemonicParsing="false" onAction="#performClustering" prefHeight="31.0" prefWidth="103.0" text="Cluster" />
+      <Label layoutX="28.0" layoutY="98.0" text="Select a level of clustering:" />
+      <Button fx:id="chartButton" layoutX="527.0" layoutY="421.0" mnemonicParsing="false" onAction="#seeChart" text="See Charts" />
+      <Button fx:id="phasesButton" layoutX="28.0" layoutY="421.0" mnemonicParsing="false" onAction="#extractPhases" text="Extract Phases" />
+      <TableView fx:id="levelTableView" layoutX="28.0" layoutY="129.0" prefHeight="265.0" prefWidth="571.0">
+        <columns>
+        </columns>
+      </TableView>
+      <Button fx:id="topClustersButton" layoutX="273.0" layoutY="421.0" mnemonicParsing="false" onAction="#getTopClusters" text="Top Cluster Sets" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="561.0" prefWidth="1266.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.HistogramMaker">
+   <children>
+      <BarChart fx:id="growthChart" layoutX="14.0" layoutY="27.0" prefHeight="461.0" prefWidth="568.0">
+        <xAxis>
+          <CategoryAxis fx:id="gxAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="gyAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="saveChartButton" layoutX="559.0" layoutY="505.0" mnemonicParsing="false" onAction="#saveCharts" text="Save Charts As Images" />
+      <BarChart fx:id="maintenanceChart" layoutX="663.0" layoutY="27.0" prefHeight="461.0" prefWidth="568.0">
+         <xAxis>
+            <CategoryAxis fx:id="mxAxis" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="myAxis" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

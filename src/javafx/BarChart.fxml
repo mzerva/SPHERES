@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="731.0" prefWidth="1419.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.BarChartMaker">
+   <children>
+      <BarChart fx:id="barChart" layoutX="14.0" layoutY="27.0" prefHeight="649.0" prefWidth="1390.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="saveChartButton" layoutX="634.0" layoutY="676.0" mnemonicParsing="false" onAction="#saveChart" text="Save Chart As Image" />
+   </children>
+</AnchorPane>
